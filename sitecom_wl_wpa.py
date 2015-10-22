@@ -20,6 +20,11 @@ CHARSETS = {
         "E5MFJUWXCDKL46PQHAB3YNJ8VZ7RS9TR2GPW"
     ),
 
+    "300N": (
+        "23456789ABCDEFGHJKLMNPQRSTUVWXYZ38BZ",
+        "WXCDYNJU8VZABLK46PQ7RS9T2E5H3MFGPWR2"
+    ),
+
     "341": (
         "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ",
         "W0X1CDYNJU8VOZA0BKL46PQ7RS9T2E5HI3MF"
@@ -86,7 +91,7 @@ def main():
     parser.add_argument('mac', help = "MAC address")
     args = parser.parse_args()
     mac3 = args.mac.replace(":", "")[:6].upper()
-    print "===== Default WPA key generator for Sitecom WLR-4000/4004/341/2x00 routers ======="
+    print "===== Default WPA key generator for Sitecom WLR-4000/4004/341/2x00/300N routers ======="
     if mac3 != "000CF6": print "WARNING: This is not a Sitecom router according to MAC address, generating anyway.. "
     ssid = "Sitecom%s" % args.mac.replace(":", "")[6:].upper()
     if args.model == "2x00":
