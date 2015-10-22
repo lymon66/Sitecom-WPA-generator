@@ -1,5 +1,5 @@
 # Sitecom-WPA-generator
-Default WPA key generator for Sitecom WLR-4000/4004/341/2x00 routers
+Default WPA key generator for Sitecom WLR-4000/4004/341/300N/2x00 routers
 
 THIS SCRIPT IS FOR SECURITY TESTING OF YOUR OWN ROUTERS ONLY
 
